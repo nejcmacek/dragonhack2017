@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: rgba(0,0,0,0.8);
+}
+
+.bg-primary {
+  background: #f0be3d
+}
+
+.bg-dark {
+  background: #808086;
+}
+
+.bg-warn {
+  background: #f56c1b;
+}
+
+.color-accent {
+  color: #f0be3d;
+}
+
+.color-light {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.color-warn {
+  color: #f56c1b;
+}
