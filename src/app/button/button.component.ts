@@ -10,6 +10,7 @@ export class ButtonComponent implements OnInit {
 
   element: HTMLElement;
   animElement: HTMLElement;
+  warn: boolean;
 
   constructor(myElement: ElementRef) {
     this.element = myElement.nativeElement;
@@ -20,11 +21,12 @@ export class ButtonComponent implements OnInit {
     if (this.element.hasAttribute("no-margin")) {
       this.element.classList.add("no-margin");
     }
+    this.warn = this.element.hasAttribute("warn");
   }
 
   onHover() {
     const el = document.createElement("div");
-    el.classList.add("bg-slide", "bg-primary");
+    el.classList.add("bg-slide", this.warn ? "bg-warn" : "bg-primary");
     this.element.appendChild(el);
     this.animElement = el;
     setTimeout(() => {
