@@ -1,6 +1,6 @@
 <dh-navbar fixed>
-  <dh-navitem href="#">Item 1</dh-navitem>
-  <dh-navitem href="#">Item 2</dh-navitem>
+  <dh-navitem href="#">Home</dh-navitem>
+  <dh-navitem href="#">About</dh-navitem>
 </dh-navbar>
 
 <section style="background-image: url('http://nejo.si/img/bg/bg-1.jpg')" class="dark custom-frontpage">
@@ -15,7 +15,7 @@
 </section>
 
 <dh-tabs [(selectedIndex)]="sel">
-  <dh-tab label="one" [selected]="sel === 0">
+  <dh-tab label="Register" [selected]="sel === 0">
 
     <h2>Sample Form</h2>
 
@@ -27,12 +27,13 @@
 
     <form action="#">
       <dh-radioset></dh-radioset>
-      <dh-input placeholder="Insert your name"></dh-input>
+      <dh-input placeholder="Your name here"></dh-input>
 
       <div class="dh-row">
-        <dh-select placeholder="Choose whatever you desire">
-          <dh-option>Option 1</dh-option>
-          <dh-option>Option 2</dh-option>
+        <dh-select placeholder="Your role">
+          <dh-option>Mentor</dh-option>
+          <dh-option>Student</dh-option>
+          <dh-option>Sponsor</dh-option>
         </dh-select>
         <dh-checkbox>Agree to our terms?</dh-checkbox>
       </div>
@@ -46,7 +47,7 @@
     </form>
 
   </dh-tab>
-  <dh-tab label="two" [selected]="sel === 1">
+  <dh-tab label="Browse" [selected]="sel === 1">
 
     <dh-table>
       <thead>
