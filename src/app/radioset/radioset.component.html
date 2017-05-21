@@ -1,0 +1,10 @@
+<div>
+  <div class="radio" *ngFor="let item of items; let i = index" (click)="select(i)" [ngClass]="{'selected': selected === i}">
+    <span class="checkbox cross">○</span>
+    <span class="content">{{item}}</span>
+  </div>
+</div>
+<div class="checkbox tick bg-primary">
+  <div class="box-line box-tick-line box-tick-line-1"></div>
+  <div class="box-line box-tick-line box-tick-line-2"></div>
+</div>

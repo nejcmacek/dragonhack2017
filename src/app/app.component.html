@@ -1,5 +1,28 @@
-<h1>App</h1>
-<p>TODO: Add components</p>
-<p>Edit this in testing environment - we'll work on the site later on.</p>
+<dh-navbar fixed>
+  <dh-navitem href="https://google.si">Item 1</dh-navitem>
+  <dh-navitem href="http://dragonhack.si">Item 2</dh-navitem>
+</dh-navbar>
 
-<dh-button>My Button</dh-button>
+<div>
+  <dh-button>My Button</dh-button>
+</div>
+
+<div>
+  <dh-checkbox>Blah blah</dh-checkbox>
+</div>
+
+<div>
+  <dh-radioset></dh-radioset>
+</div>
+
+<div>
+    <dh-input></dh-input>
+</div>
+
+<div>
+  <dh-tabs [(selectedIndex)]="sel">
+    <dh-tab label="one" [selected]="sel === 0">S</dh-tab>
+    <dh-tab label="two" [selected]="sel === 1">Two</dh-tab>
+    <dh-tab label="three" [selected]="sel === 2">Three<br>sdf</dh-tab>
+  </dh-tabs>
+</div>
