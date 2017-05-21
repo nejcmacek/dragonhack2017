@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './button/button.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
-		ButtonComponent
+		ButtonComponent,
+		CheckboxComponent
 	],
 	imports: [
 		BrowserModule,
