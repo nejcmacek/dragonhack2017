@@ -3,14 +3,27 @@
   <dh-navitem href="#">Item 2</dh-navitem>
 </dh-navbar>
 
-<div class="content">
-  <h1>Balur.js Framework</h1>
-  <h2>What is it?</h2>
-  <p>Lorem ipsum</p>
-</div>
+<section style="background-image: url('http://nejo.si/img/bg/bg-1.jpg')" class="dark custom-frontpage">
+  <div class="wrapper">
+    <h1 class="site-title">Balur.js</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper, est id pharetra elementum, sem nisl consequat
+      massa, vel tempus libero lorem vitae justo. Vestibulum ligula lorem, semper id tristique vitae, dictum vitae ipsum.
+      Aenean imperdiet dolor vitae sapien imperdiet viverra. Aenean eget nulla quis nunc aliquet sodales. Morbi quis porttitor
+      nisi, vel tempus nisi. Nunc arcu mauris, sodales vitae felis hendrerit, mollis commodo nulla. Proin sagittis ipsum
+      sit amet vehicula rhoncus. Quisque scelerisque neque quis nisl faucibus, ac rhoncus justo imperdiet.</p>
+  </div>
+</section>
 
 <dh-tabs [(selectedIndex)]="sel">
   <dh-tab label="one" [selected]="sel === 0">
+
+    <h2>Sample Form</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper, est id pharetra elementum, sem nisl consequat
+      massa, vel tempus libero lorem vitae justo. Vestibulum ligula lorem, semper id tristique vitae, dictum vitae ipsum.
+      Aenean imperdiet dolor vitae sapien imperdiet viverra. Aenean eget nulla quis nunc aliquet sodales. Morbi quis porttitor
+      nisi, vel tempus nisi. Nunc arcu mauris, sodales vitae felis hendrerit, mollis commodo nulla. Proin sagittis ipsum
+      sit amet vehicula rhoncus. Quisque scelerisque neque quis nisl faucibus, ac rhoncus justo imperdiet.</p>
 
     <form action="#">
       <dh-radioset></dh-radioset>
@@ -24,9 +37,12 @@
         <dh-checkbox>Agree to our terms?</dh-checkbox>
       </div>
 
-      <div>
+      <div class="right">
         <dh-button>Submit</dh-button>
       </div>
+
+      <div class="clear"></div>
+
     </form>
 
   </dh-tab>

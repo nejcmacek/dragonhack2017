@@ -2,6 +2,7 @@ body,
 html {
     padding: 0;
     margin: 0;
+    font-size: 18px;
 }
 
 body {
@@ -9,7 +10,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0,0,0,0.6);
     font-family: sans-serif;
     box-sizing: border-box;
 }
@@ -23,7 +24,11 @@ body {
 }
 
 .bg-warn {
-    background: #f56c1b;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.color-dark {
+    color: rgba(0,0,0,0.6); 
 }
 
 .color-accent {
@@ -49,4 +54,76 @@ body {
   to {
     box-shadow: 0px 2px 8px 2px rgba(0,0,0,0.3);
   }
+}
+
+h1 {
+    margin: 0;
+    padding: 8px 24px;
+    text-align: center;
+    /*color: #f0be3d;*/
+    font-weight: 100;
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: 100;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 0 16px 12px;
+    margin-bottom: 24px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+section {
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 12px;
+}
+
+section.dark {
+    color: rgba(0,0,0,0.6);
+}
+
+.wrapper {
+    max-width: 902px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.custom-title {
+    padding: 24px 0;
+}
+
+p {
+    margin: 0;
+}
+
+p+* {
+    margin-top: 24px;
+}
+
+.custom-frontpage {
+    padding: 64px 0;
+}
+
+.site-title {
+    margin-bottom: 24px;
+    font-size: 64px;
+    border-bottom: 1px solid rgba(0,0,0,0.6);
+}
+
+.right {
+    float: right;
+}
+
+.right:after {
+    content: " ";
+    clear:both;
+    display:block;
+}
+
+.clear {
+    clear: both;
 }

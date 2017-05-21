@@ -1,3 +1,6 @@
 div{
     padding: 12px;
 }
+:host {
+    min-width: 50%;
+}

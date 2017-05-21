@@ -1,7 +1,7 @@
-<div class="header bg-dark">
-  <dh-button *ngFor="let name of tabNames; let i = index" toggleable [toggled]="sIndex === i" (click)="select(i)" no-margin>{{name}}</dh-button>
+<div class="header bg-primary">
+  <dh-button warn *ngFor="let name of tabNames; let i = index" toggleable [toggled]="sIndex === i" (click)="select(i)" no-margin>{{name}}</dh-button>
 </div>
-<div class="content">
+<div class="content wrapper">
   <ng-content></ng-content>
 </div>
 <!--{{var}}-->

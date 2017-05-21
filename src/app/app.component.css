@@ -9,6 +9,7 @@ body {
     align-items: baseline;
     align-content: flex-start;
     align-content: stretch;
+    /*justify-content: center;*/
 }
 
 .dh-row.right {
@@ -18,8 +19,13 @@ body {
 .dh-row > * {
     display: flex;
     margin:12px;
+    /*flex-shrink: 1;*/
+    flex-grow: 1;
 }
 
-.content {
-    padding: 12px;
+@media (max-width: 500px) {
+    .dh-row {
+    flex-direction: column;
+    flex-flow: column;
+    }
 }
