@@ -29,6 +29,7 @@ import { TableComponent } from './table/table.component';
 		InputComponent,
 		ThumbnailComponent,
 		TabComponent,
+		TabsComponent,
 		InputComponent,
 		SelectComponent,
 		OptionComponent,
