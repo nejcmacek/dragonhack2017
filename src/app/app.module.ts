@@ -9,6 +9,8 @@ import { NavitemComponent } from './navitem/navitem.component';
 import { ButtonComponent } from './button/button.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { RadiosetComponent } from './radioset/radioset.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { TabComponent } from './tab/tab.component';
 import { InputComponent } from './input/input.component';
 
 @NgModule({
@@ -19,6 +21,8 @@ import { InputComponent } from './input/input.component';
 		NavitemComponent,
 		ButtonComponent,
 		RadiosetComponent,
+		TabsComponent,
+		TabComponent,
 		InputComponent
 	],
 	imports: [
