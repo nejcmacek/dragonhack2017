@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef, EventEmitter, Output, Input } from '@angular/core';
 
 @Component({
   selector: 'dh-radioset',
@@ -7,10 +7,21 @@ import { Component, OnInit, ElementRef } from '@angular/core';
 })
 export class RadiosetComponent implements OnInit {
 
-  items = ["abc", "def", "tri"];
+  items: string[];
   selected = -1;
   tick: HTMLElement;
   host: HTMLElement;
+
+  @Input()
+  get values() {
+    return this.items;
+  }
+  @Output() valuesChange = new EventEmitter<string[]>();
+  set values(values) {
+    this.items = values;
+    // console.log(values);
+    this.valuesChange.emit(values);
+  }
 
   constructor(elt: ElementRef) {
     this.host = <HTMLElement>elt.nativeElement;

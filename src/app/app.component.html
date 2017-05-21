@@ -26,14 +26,11 @@
       sit amet vehicula rhoncus. Quisque scelerisque neque quis nisl faucibus, ac rhoncus justo imperdiet.</p>
 
     <form action="#">
-      <dh-radioset></dh-radioset>
+      <dh-radioset [values]="options"></dh-radioset>
       <dh-input placeholder="Insert your name"></dh-input>
 
       <div class="dh-row">
-        <dh-select placeholder="Choose whatever you desire">
-          <dh-option>Option 1</dh-option>
-          <dh-option>Option 2</dh-option>
-        </dh-select>
+        <dh-select [values]="selection" placeholder="Select an Option"></dh-select>
         <dh-checkbox>Agree to our terms?</dh-checkbox>
       </div>
 

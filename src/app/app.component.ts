@@ -9,16 +9,16 @@ import { Component } from '@angular/core';
 export class AppComponent implements OnInit {
 	options = [
 		"Radio Button 1",
-		"Radio Button 2"
+		"Radio Button 2",
+		"Radio Button 3"
+	];
+	selection = [
+		"Option 1",
+		"Option 2",
+		"Option 3"
 	];
 
 	ngOnInit(): void {
-		// setTimeout(() => {
-		// 	changeColor({
-		// 		accent: "#f0be3d",
-		// 		black: "rgb(128, 128, 134)"
-		// 	});
-		// });
 	}
 
 }

@@ -9,7 +9,17 @@ export class SelectComponent implements OnInit {
   placeholder: string;
   isExtended = false;
   sel = "";
-  options = ["a", "b", "c"]
+  options: string[]; // = ["a", "b", "c"];
+
+  @Input()
+  get values() {
+    return this.options;
+  }
+  @Output() valuesChange = new EventEmitter<string[]>();
+  set values(values) {
+    this.options = values;
+    this.valuesChange.emit(values);
+  }
 
   @Input()
   get selected() {
