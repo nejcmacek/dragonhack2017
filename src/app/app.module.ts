@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NavitemComponent } from './navitem/navitem.component';
 import { ButtonComponent } from './button/button.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
+import { RadiosetComponent } from './radioset/radioset.component';
 
 @NgModule({
 	declarations: [
@@ -15,7 +16,8 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 		CheckboxComponent,
 		NavbarComponent,
 		NavitemComponent,
-		ButtonComponent
+		ButtonComponent,
+		RadiosetComponent
 	],
 	imports: [
 		BrowserModule,
