@@ -9,6 +9,8 @@ import { NavitemComponent } from './navitem/navitem.component';
 import { ButtonComponent } from './button/button.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { RadiosetComponent } from './radioset/radioset.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { TabComponent } from './tab/tab.component';
 import { InputComponent } from './input/input.component';
 import { ThumbnailComponent } from './thumbnail/thumbnail.component';
 
@@ -21,7 +23,9 @@ import { ThumbnailComponent } from './thumbnail/thumbnail.component';
 		ButtonComponent,
 		RadiosetComponent,
 		InputComponent,
-		ThumbnailComponent
+		ThumbnailComponent,
+		TabComponent,
+		InputComponent
 	],
 	imports: [
 		BrowserModule,

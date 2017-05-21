@@ -1,0 +1,11 @@
+:host {
+  display: block;
+  transition: all .3s;
+  /*max-height: 100px;*/
+  opacity: 1;
+}
+
+:host:not(.selected) {
+  /*opacity: 0;*/
+  /*max-height: 0;*/
+}

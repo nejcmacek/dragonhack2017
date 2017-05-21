@@ -22,7 +22,12 @@
 }
 
 :host.no-margin {
-  margin: 0 12px;
+  margin: 0;
+}
+
+:host.fullwidth {
+  box-sizing: border-box;
+  width: 100%;
 }
 
 :host > span {
