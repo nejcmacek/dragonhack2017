@@ -1,28 +1,25 @@
-dh-list {
-    padding: 20px;
-    margin: 5px;
-    width: 200px;
+body {
+    /*padding-top: 52px;*/
 }
 
-ul {
-    padding: 20px;
-    margin: 5px;
-    font: 15px 'trebuchet MS', 'lucida sans';
-    list-style: none;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+.dh-row {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    align-items: baseline;
+    align-content: flex-start;
+    align-content: stretch;
 }
 
-.list {
-    width: 200px;
+.dh-row.right {
+    align-content: flex-end;
 }
 
-li:hover {
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: 20px;
+.dh-row > * {
+    display: flex;
+    margin:12px;
 }
 
-.placeholder{
-    height: 1000px;
-    width: 100%;
+.content {
+    padding: 12px;
 }

@@ -10,6 +10,7 @@ export class NavbarComponent implements OnInit {
 
   constructor(elm: ElementRef) {
     this.isFixed = elm.nativeElement.hasAttribute('fixed');
+    // document.body.style.paddingTop = "52px";
   }
 
   ngOnInit() {

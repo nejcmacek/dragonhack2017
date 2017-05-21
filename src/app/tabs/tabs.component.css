@@ -1,5 +1,5 @@
 .header {
-  background: #888;
+  /*background: #888;*/
 }
 .content {
   padding: 12px;
@@ -7,5 +7,5 @@
   transition: height .3s;
 }
 :host {
-  border-bottom: 2px solid #888;
+  /*border-bottom: 2px solid #888;*/
 }

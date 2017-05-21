@@ -1,4 +1,4 @@
-dh-list {
+:host {
     padding: 20px;
     margin: 5px;
     width: 200px;
@@ -16,7 +16,7 @@ ul {
     width: 200px;
 }
 
-li:hover {
+:host /deep/ li:hover {
     font-weight: bold;
     text-decoration: underline;
     font-size: 20px;

@@ -11,6 +11,7 @@ body {
     overflow-y: auto;
     color: rgba(0, 0, 0, 0.8);
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 .bg-primary {
@@ -18,7 +19,7 @@ body {
 }
 
 .bg-dark {
-    background: #808086;
+    background: #888;
 }
 
 .bg-warn {
@@ -35,6 +36,10 @@ body {
 
 .color-warn {
     color: #f56c1b;
+}
+
+.border-color-primary {
+    border-color: #f0be3d !important;
 }
 
 @keyframes pulse {

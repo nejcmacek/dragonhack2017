@@ -28,7 +28,7 @@ input {
 }
 
 :host:not(.empty) .border, :host.empty.focused .border {
-  border: 2px solid #f0be3d;
+  border: 2px solid; /* #f0be3d;*/
   height: 100%;
   left: 0;
   right: 0;

@@ -36,7 +36,10 @@ export class TabsComponent implements OnInit {
     if (index < 0) { return; }
     const eltPrev = this.tabs[this.sIndex];
     const elt = this.tabs[index];
-    this.content.style.height = elt.clientHeight + "px";
+    // this.content.style.maxHeight = eltPrev.clientHeight + 100 + "px";
+    // setTimeout(() => {
+    //   delete this.content.style.maxHeight;
+    // }, 300);
     this.selectedIndexChange.emit(this.sIndex);
     // this.selectedIndexChange.emit("selected", this.sIndex);
   }

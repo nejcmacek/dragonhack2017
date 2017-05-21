@@ -1,7 +1,7 @@
 <div (click)="onClick()" class="click">
-<span>{{placeholder}}</span>
-<span class="chevron">&#x25BC;</span>
+    <span>{{sel || placeholder}}</span>
+    <span class="chevron color-primary">&#x25BC;</span>
 </div>
 <div class="dropdown" [ngClass]="{'visible': isExtended}">
-    <ng-content></ng-content>
+    <dh-option *ngFor="let opt of options" (click)="itemClicked(opt)" (,[selected])="opt == sel">{{opt}}</dh-option>
 </div>

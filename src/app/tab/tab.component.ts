@@ -25,6 +25,7 @@ export class TabComponent implements OnInit, OnChanges {
     const that = this;
     setTimeout(function () {
       that.elt.style.display = "none";
+      delete that.elt.style.maxHeight;
     }, 300);
   }
 

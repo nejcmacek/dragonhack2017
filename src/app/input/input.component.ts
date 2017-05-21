@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'dh-input',
@@ -12,6 +12,20 @@ export class InputComponent implements OnInit {
   empty = true;
   elt: HTMLElement;
   value: any;
+
+  sel = "";
+
+  @Input()
+  get val() {
+    return this.value;
+  }
+  @Output() valChange = new EventEmitter<string>();
+
+  set val(val) {
+    this.value = val;
+    console.log(val);
+    this.valChange.emit(this.value);
+  }
 
   constructor(elt: ElementRef) {
     this.type = elt.nativeElement.getAttribute("type") || "text";
