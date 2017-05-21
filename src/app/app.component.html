@@ -6,3 +6,80 @@
     <li>List item</li>
     <li>List item</li>
 </dh-list>
+
+<dh-navbar fixed>
+  <dh-navitem href="https://google.si">Item 1</dh-navitem>
+  <dh-navitem href="http://dragonhack.si">Item 2</dh-navitem>
+</dh-navbar>
+
+<div>
+  <dh-button>My Button</dh-button>
+</div>
+
+<div>
+  <dh-checkbox>Blah blah</dh-checkbox>
+</div>
+
+<div>
+  <dh-radioset></dh-radioset>
+</div>
+
+<div>
+  <dh-input></dh-input>
+</div>
+<div>
+  <dh-tabs [(selectedIndex)]="sel">
+    <dh-tab label="one" [selected]="sel === 0">S</dh-tab>
+    <dh-tab label="two" [selected]="sel === 1">Two</dh-tab>
+    <dh-tab label="three" [selected]="sel === 2">Three<br>sdf</dh-tab>
+  </dh-tabs>
+</div>
+
+<dh-select placeholder="Moj select">
+  <dh-option>Option 1</dh-option>
+  <dh-option>Option 2</dh-option>
+</dh-select>
+
+<div class="placeholder"></div>
+<dh-footer>Copyright &copy; DragonHack</dh-footer>
+
+<dh-table>
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</dh-table>
+

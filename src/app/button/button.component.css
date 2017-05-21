@@ -1,0 +1,39 @@
+:host {
+  display: inline-block;
+  padding: 16px 24px;
+  position: relative;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  margin: 12px;
+  cursor: pointer;
+}
+
+:host /deep/ .bg-slide {
+  position:absolute;
+  left: -50%;
+  right: 50%;
+  top: 0;
+  bottom: 0;
+  transition: all .3s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+:host.no-margin {
+  margin: 0;
+}
+
+:host.fullwidth {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+:host > span {
+  position: relative;
+  z-index: 2;
+}
+:host:active /deep/ .bg-slide {
+  animation: pulse alternate infinite .8s;
+}
