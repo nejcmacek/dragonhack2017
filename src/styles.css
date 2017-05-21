@@ -9,6 +9,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   color: rgba(0,0,0,0.8);
+  font-family: sans-serif;
 }
 
 .bg-primary {
