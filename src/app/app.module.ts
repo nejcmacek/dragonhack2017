@@ -12,6 +12,8 @@ import { RadiosetComponent } from './radioset/radioset.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TabComponent } from './tab/tab.component';
 import { InputComponent } from './input/input.component';
+import { SelectComponent } from './select/select.component';
+import { OptionComponent } from './option/option.component';
 
 @NgModule({
 	declarations: [
@@ -23,7 +25,9 @@ import { InputComponent } from './input/input.component';
 		RadiosetComponent,
 		TabsComponent,
 		TabComponent,
-		InputComponent
+		InputComponent,
+		SelectComponent,
+		OptionComponent
 	],
 	imports: [
 		BrowserModule,
