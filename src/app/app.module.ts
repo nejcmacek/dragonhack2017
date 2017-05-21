@@ -7,10 +7,12 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavitemComponent } from './navitem/navitem.component';
 import { ButtonComponent } from './button/button.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
+		CheckboxComponent,
 		NavbarComponent,
 		NavitemComponent,
 		ButtonComponent
