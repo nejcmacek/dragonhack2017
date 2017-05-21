@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 	styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+	sel = 0;
 	options = [
 		"One year",
 		"Two years",
