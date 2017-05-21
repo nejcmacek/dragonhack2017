@@ -1,39 +1,40 @@
-body, html {
-  padding: 0;
-  margin: 0;
+body,
+html {
+    padding: 0;
+    margin: 0;
 }
 
 body {
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  color: rgba(0,0,0,0.8);
-  font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: sans-serif;
 }
 
 .bg-primary {
-  background: #f0be3d
+    background: #f0be3d
 }
 
 .bg-dark {
-  background: #808086;
+    background: #808086;
 }
 
 .bg-warn {
-  background: #f56c1b;
+    background: #f56c1b;
 }
 
 .color-accent {
-  color: #f0be3d;
+    color: #f0be3d;
 }
 
 .color-light {
-  color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .color-warn {
-  color: #f56c1b;
+    color: #f56c1b;
 }
 
 @keyframes pulse {
