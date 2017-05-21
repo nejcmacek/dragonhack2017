@@ -16,6 +16,7 @@ import { ThumbnailComponent } from './thumbnail/thumbnail.component';
 import { SelectComponent } from './select/select.component';
 import { OptionComponent } from './option/option.component';
 import { FooterComponent } from './footer/footer.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
 	declarations: [
@@ -31,7 +32,8 @@ import { FooterComponent } from './footer/footer.component';
 		InputComponent,
 		SelectComponent,
 		OptionComponent,
-		FooterComponent
+		FooterComponent,
+		TableComponent
 	],
 	imports: [
 		BrowserModule,
