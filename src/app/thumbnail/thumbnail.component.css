@@ -1,0 +1,7 @@
+img {
+  padding: 2px;
+  border: 2px solid rgba(0,0,0,0.2);
+}
+img:hover{
+  border: 2px solid #f0be3d;
+}

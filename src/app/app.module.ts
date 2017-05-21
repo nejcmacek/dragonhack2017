@@ -12,6 +12,10 @@ import { RadiosetComponent } from './radioset/radioset.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TabComponent } from './tab/tab.component';
 import { InputComponent } from './input/input.component';
+import { ThumbnailComponent } from './thumbnail/thumbnail.component';
+import { SelectComponent } from './select/select.component';
+import { OptionComponent } from './option/option.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
 	declarations: [
@@ -21,9 +25,13 @@ import { InputComponent } from './input/input.component';
 		NavitemComponent,
 		ButtonComponent,
 		RadiosetComponent,
-		TabsComponent,
+		InputComponent,
+		ThumbnailComponent,
 		TabComponent,
-		InputComponent
+		InputComponent,
+		SelectComponent,
+		OptionComponent,
+		FooterComponent
 	],
 	imports: [
 		BrowserModule,

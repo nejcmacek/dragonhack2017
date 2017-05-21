@@ -1,0 +1,7 @@
+<div (click)="onClick()" class="click">
+<span>{{placeholder}}</span>
+<span class="chevron">&#x25BC;</span>
+</div>
+<div class="dropdown" [ngClass]="{'visible': isExtended}">
+    <ng-content></ng-content>
+</div>
