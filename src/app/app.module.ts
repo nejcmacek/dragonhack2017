@@ -11,6 +11,7 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { RadiosetComponent } from './radioset/radioset.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TabComponent } from './tab/tab.component';
+import { InputComponent } from './input/input.component';
 
 @NgModule({
 	declarations: [
@@ -21,7 +22,8 @@ import { TabComponent } from './tab/tab.component';
 		ButtonComponent,
 		RadiosetComponent,
 		TabsComponent,
-		TabComponent
+		TabComponent,
+		InputComponent
 	],
 	imports: [
 		BrowserModule,
