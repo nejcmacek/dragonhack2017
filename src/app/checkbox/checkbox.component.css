@@ -1,0 +1,53 @@
+:host {
+  line-height: 48px;
+  height: 48px;
+  position: relative;
+  display: inline-block;
+  user-select: none;
+  cursor: pointer;
+}
+
+:host * {
+  pointer-events: none;
+}
+
+.content {
+  padding-left: 48px;
+  padding-right: 24px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  float:left;
+}
+
+.box {
+  position: absolute;
+  top: 12px;
+  left: -24px;
+  height: 24px;
+  width: 24px;
+  text-align: center;
+  line-height: 24px;
+  transition: all .3s;
+  opacity: 0;
+}
+
+.cross {
+  border: 1px solid #f0be3d;
+  left: 12px;
+}
+
+:host.checked .tick {
+  opacity: 1;
+}
+
+:host:not(.checked) .cross {
+  opacity: 1;
+}
+
+:host:hover.checked .tick {
+  animation: pulse alternate infinite .8s;
+}
+:host:hover:not(.checked) .cross {
+  animation: pulse alternate infinite .8s;
+}
