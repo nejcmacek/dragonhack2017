@@ -1,0 +1,35 @@
+:host {
+  height: 52px;
+  position: relative;
+  display: block;
+  padding: 0 16px;
+  margin: 0 16px;
+}
+
+input {
+  line-height: 48px;
+  margin: 2px 0;
+  border: none;
+  padding: 0 16px;
+  width: 100%;
+  outline: none;
+}
+
+.border {
+  position: absolute;
+  transition: all .3s;
+  border-bottom: 2px solid rgba(0,0,0,0.2);
+  height: 2px;
+  box-sizing: border-box;
+  left: 8px;
+  right: 8px;
+  bottom: 0;
+  pointer-events: none;
+}
+
+:host:not(.empty) .border, :host.empty.focused .border {
+  border: 2px solid #f0be3d;
+  height: 100%;
+  left: 0;
+  right: 0;
+}
