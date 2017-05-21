@@ -13,6 +13,8 @@ import { TabsComponent } from './tabs/tabs.component';
 import { TabComponent } from './tab/tab.component';
 import { InputComponent } from './input/input.component';
 import { ThumbnailComponent } from './thumbnail/thumbnail.component';
+import { SelectComponent } from './select/select.component';
+import { OptionComponent } from './option/option.component';
 
 @NgModule({
 	declarations: [
@@ -25,7 +27,9 @@ import { ThumbnailComponent } from './thumbnail/thumbnail.component';
 		InputComponent,
 		ThumbnailComponent,
 		TabComponent,
-		InputComponent
+		InputComponent,
+		SelectComponent,
+		OptionComponent
 	],
 	imports: [
 		BrowserModule,
