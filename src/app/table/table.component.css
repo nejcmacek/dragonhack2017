@@ -1,0 +1,20 @@
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/deep/ td, /deep/ th {
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 12px;
+}
+
+/deep/ tr:nth-child(even) {
+    background-color: rgba(240, 190, 61, 0.2);
+}
+
+/deep/ thead>tr {
+    background-color: #f0be3d;
+}
