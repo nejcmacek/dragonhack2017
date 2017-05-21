@@ -25,6 +25,9 @@ export class ButtonComponent implements OnInit, OnChanges {
     if (this.element.hasAttribute("no-margin")) {
       this.element.classList.add("no-margin");
     }
+    if (this.element.hasAttribute("fullwidth")) {
+      this.element.classList.add("fullwidth");
+    }
     this.warn = this.element.hasAttribute("warn");
     this.toggleable = this.element.hasAttribute("toggleable");
   }
