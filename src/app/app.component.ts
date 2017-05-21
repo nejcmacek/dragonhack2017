@@ -8,14 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 	options = [
-		"Radio Button 1",
-		"Radio Button 2",
-		"Radio Button 3"
+		"One year",
+		"Two years",
+		"Three years"
 	];
 	selection = [
-		"Option 1",
-		"Option 2",
-		"Option 3"
+		"Mentor",
+		"Student",
+		"Sponsor"
 	];
 
 	ngOnInit(): void {

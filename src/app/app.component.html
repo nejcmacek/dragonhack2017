@@ -1,6 +1,7 @@
 <dh-navbar fixed>
-  <dh-navitem href="#">Item 1</dh-navitem>
-  <dh-navitem href="#">Item 2</dh-navitem>
+  <dh-navitem href="/">Home</dh-navitem>
+  <dh-navitem href="https://github.com/nejcmacek/dragonhack2017">GitHub</dh-navitem>
+  <dh-navitem href="http://www.dragonhack.si/">DragonHack</dh-navitem>
 </dh-navbar>
 
 <section style="background-image: url('http://nejo.si/img/bg/bg-1.jpg')" class="dark custom-frontpage">
@@ -15,7 +16,7 @@
 </section>
 
 <dh-tabs [(selectedIndex)]="sel">
-  <dh-tab label="one" [selected]="sel === 0">
+  <dh-tab label="Register" [selected]="sel === 0">
 
     <h2>Sample Form</h2>
 
@@ -27,14 +28,14 @@
 
     <form action="#">
       <dh-radioset [values]="options"></dh-radioset>
-      <dh-input placeholder="Insert your name"></dh-input>
+      <dh-input placeholder="Your name here"></dh-input>
 
       <div class="dh-row">
-        <dh-select [values]="selection" placeholder="Select an Option"></dh-select>
+        <dh-select [values]="selection" placeholder="Select role"></dh-select>
         <dh-checkbox>Agree to our terms?</dh-checkbox>
       </div>
 
-      <div class="right">
+      <div class="dh-row right">
         <dh-button>Submit</dh-button>
       </div>
 
@@ -43,45 +44,45 @@
     </form>
 
   </dh-tab>
-  <dh-tab label="two" [selected]="sel === 1">
+  <dh-tab label="Browse" [selected]="sel === 1">
 
     <dh-table>
       <thead>
         <tr>
-          <th>Company</th>
-          <th>Contact</th>
-          <th>Country</th>
+          <th>Animal</th>
+          <th>Family</th>
+          <th>Leg Count</th>
         </tr>
       </thead>
       <tr>
-        <td>Alfreds Futterkiste</td>
-        <td>Maria Anders</td>
-        <td>Germany</td>
+        <td>Cheetah</td>
+        <td>Wild cats</td>
+        <td>4</td>
       </tr>
       <tr>
-        <td>Centro comercial Moctezuma</td>
-        <td>Francisco Chang</td>
-        <td>Mexico</td>
+        <td>Fly</td>
+        <td>Insects</td>
+        <td>6</td>
       </tr>
       <tr>
-        <td>Ernst Handel</td>
-        <td>Roland Mendel</td>
-        <td>Austria</td>
+        <td>Spider</td>
+        <td>Arthropods</td>
+        <td>8</td>
       </tr>
       <tr>
-        <td>Island Trading</td>
-        <td>Helen Bennett</td>
-        <td>UK</td>
+        <td>Tuna</td>
+        <td>Fish</td>
+        <td>0</td>
       </tr>
       <tr>
-        <td>Laughing Bacchus Winecellars</td>
-        <td>Yoshi Tannamuri</td>
-        <td>Canada</td>
+        <td>Lion</td>
+        <td>Wild cats</td>
+        <td>4</td>
       </tr>
       <tr>
-        <td>Magazzini Alimentari Riuniti</td>
-        <td>Giovanni Rovelli</td>
-        <td>Italy</td>
+        <td>Tiger</td>
+        <td>Wild cats</td>
+        <td>4</td>
       </tr>
     </dh-table>
 
