@@ -10,6 +10,7 @@ import { ButtonComponent } from './button/button.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { RadiosetComponent } from './radioset/radioset.component';
 import { InputComponent } from './input/input.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
 	declarations: [
@@ -19,7 +20,8 @@ import { InputComponent } from './input/input.component';
 		NavitemComponent,
 		ButtonComponent,
 		RadiosetComponent,
-		InputComponent
+		InputComponent,
+		TableComponent
 	],
 	imports: [
 		BrowserModule,
