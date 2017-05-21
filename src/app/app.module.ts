@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavitemComponent } from './navitem/navitem.component';
 import { ButtonComponent } from './button/button.component';
+import { SelectComponent } from './select/select.component';
+import { OptionComponent } from './option/option.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		NavbarComponent,
 		NavitemComponent,
-		ButtonComponent
+		ButtonComponent,
+		SelectComponent,
+		OptionComponent
 	],
 	imports: [
 		BrowserModule,
